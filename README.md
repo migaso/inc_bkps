@@ -1,6 +1,6 @@
 # INCREMENTAL BACKUPS ON LINUX 👌
 
-This script has been designed to create incremental backups to improve the way to preserve data on the OS level.
+This script is designed to create incremental backups to improve the way data is preserved at the operating system level
 
 ## Advantage 💡 
 
@@ -12,6 +12,10 @@ The advantage of this script are the next:
 - Reduce the time to create new backups.
 - Select Volume or Disk to make the new backups.
 - Order backups by years. (create a directory with year's name)
+
+## Requirements
+Linux-based OS
+tar (GNU tar) 1.30 or higher
 
 ## How to use ❓
 
