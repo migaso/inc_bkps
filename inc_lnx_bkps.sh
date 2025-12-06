@@ -8,7 +8,7 @@ script_path=/chage/to/dir/scripts/files
 yr=$(date +"%Y")
 path=$path/${yr}
 mkdir -p $path
-num=$(ls -l $path/bkp* | tail -1 | awk -F"bkp" '{print $3}' | cut -b1)
+num=$(ls -lt $path/bkp* | head -1 | awk -F"bkp" '{print $3}' | awk -F".tgz" '{print $1}')
 if [ -z $num ]; then
   num=-1
 fi
